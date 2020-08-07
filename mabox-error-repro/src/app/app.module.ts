@@ -18,8 +18,8 @@ const token = 'getItFromMapBox';
     MapGLModule.forRoot({
         mapboxToken: token,
     }),
-    NgxMapboxGLModule.withConfig({
-      accessToken: token,
+    NgxMapboxGLModule.withConfig({ // comment those lines and MapGLModule does nothing
+      accessToken: token, // (mgl-map is not an angular component etc.)
     }),
   ],
   providers: [],
